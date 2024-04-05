@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+p {
+    margin: 15px;
+    margin-top: 0px;
+    white-space: nowrap;
+    color: #536471;
+    font-size: 13px;
+}

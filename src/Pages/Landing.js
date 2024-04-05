@@ -4,11 +4,14 @@ import './Landing.css'
 import Divider from '@mui/material/Divider';
 import google from '../assets/google.svg'
 import apple from '../assets/apple.svg'
-import { Avatar, Button} from '@mui/material';
+import { Avatar} from '@mui/material';
+import Footer from './Components/Footer';
+
 
 function Landing() {
   return (
     <div className='landing'>
+        <div className='landing__top'>
         {/* Main page divided into 2 parts; LEFT & RIGHT. Right is further divided into multiple parts */}
         <div className="landing__left">
             <img src={logo} alt='twitter logo'/>
@@ -26,20 +29,23 @@ function Landing() {
 
 
                 <div className="landing__rightOptionsMiddle">
-                <button > <Avatar className='avatar' src={google} />Sign up with Google </button>
-                <button> <Avatar className='avatar' src={apple} />Sign up with Apple</button>
-             <Divider orientation='horizontal' variant='full-width'>or</Divider>
-                <button>Create account</button>
-                <p>By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
+                <button className='Google' ><Avatar className='avatar' src={google} />Sign up with Google </button>
+                <button className='Apple'> <Avatar className='avatar' src={apple} />Sign up with Apple</button>
+             <Divider className='divider' orientation='horizontal' variant='full-width'>or</Divider>
+                <button className='Create'>Create account</button>
+                <p>By signing up, you agree to the <a href='www.facebook.com'>Terms of Service</a> and <a href='www.facebook.com'>Privacy Policy</a>, including <a href='www.facebook.com'>Cookie Use.</a></p>
                 </div>
 
 
                 <div className="landing__rightOptionsBottom">
                 <h3>Already have an account?</h3>
-                <button>Sign in</button>
+                <button className='Login'>Sign in</button>
                 </div>
             </div>
-
+        </div>
+        </div>
+        <div className='landing__bottom'>
+            
         </div>
     </div>
   )
