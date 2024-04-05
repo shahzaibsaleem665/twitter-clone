@@ -90,9 +90,7 @@
 .landing__rightOptionsMiddle > p {
     font-size: 12px;
     margin-top: 10px;
-    overflow-wrap: break-word;
-    max-width: 300px;
-
+ 
 }
 a {
     text-decoration: none;
