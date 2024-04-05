@@ -33,7 +33,7 @@ function Landing() {
                 <button className='Apple'> <Avatar className='avatar' src={apple} />Sign up with Apple</button>
              <Divider className='divider' orientation='horizontal' variant='full-width'>or</Divider>
                 <button className='Create'>Create account</button>
-                <p>By signing up, you agree to the <a href='www.facebook.com'>Terms of Service</a> and <a href='www.facebook.com'>Privacy Policy</a>, including <a href='www.facebook.com'>Cookie Use.</a></p>
+                <p>By signing up, you agree to the <a href='www.facebook.com'>Terms of Service</a> and <a href='www.facebook.com'>Privacy <br></br> Policy</a>, including <a href='www.facebook.com'>Cookie Use.</a></p>
                 </div>
 
 
@@ -45,7 +45,7 @@ function Landing() {
         </div>
         </div>
         <div className='landing__bottom'>
-            
+            <Footer />
         </div>
     </div>
   )
